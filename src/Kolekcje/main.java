@@ -13,7 +13,7 @@ public class main {
             integerList.add(generator.nextInt(50));
 
 
-        Zadania1_11 zadanie = new Zadania1_11(integerList);
+        Exercise_1 zadanie = new Exercise_1(integerList);
         zadanie.Zadanie_2();
 
     }

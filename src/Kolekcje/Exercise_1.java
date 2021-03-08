@@ -3,7 +3,7 @@ package Kolekcje;
 import java.sql.SQLOutput;
 import java.util.*;
 
-public class Zadania1_11 {
+public class Exercise_1 {
     /*
 1. Stwórz listę Integerów. Wykonaj zadania:
 - dodaj do listy 5 elementów ze scannera
@@ -53,7 +53,7 @@ Sprawdź działanie aplikacji.Stwórz oddzielnego maina, a w nim kolejną listę
 
      */
 
-    public Zadania1_11(ArrayList integerList2) {
+    public Exercise_1(ArrayList integerList2) {
         this.integerList2 = integerList2;
     }
 
