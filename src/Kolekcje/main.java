@@ -7,15 +7,15 @@ public class main {
     public static void main(String[] args) {
 
         //stowrzenie listy i wstrzyknięcie jej do metody
-        ArrayList<Integer> integerList = new ArrayList<>();
-        Random generator = new Random();
-        for (int i = 0; i < 10; i++)
-            integerList.add(generator.nextInt(50));
+//        ArrayList<Integer> integerList = new ArrayList<>();
+//        Random generator = new Random();
+//        for (int i = 0; i < 10; i++)
+//            integerList.add(generator.nextInt(50));
+
+        Exercises_1 zadanie = new Exercises_1();
+        zadanie.zadanie_4();
 
 
-        Exercises_1 zadanie = new Exercises_1(integerList);
-//        zadanie.Zadanie_2();
-        zadanie.zadanie_3();
 
     }
 }
