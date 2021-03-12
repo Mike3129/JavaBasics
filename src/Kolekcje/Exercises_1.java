@@ -3,7 +3,7 @@ package Kolekcje;
 import java.sql.SQLOutput;
 import java.util.*;
 
-public class Exercise_1 {
+public class Exercises_1 {
     /*
 1. Stwórz listę Integerów. Wykonaj zadania:
 - dodaj do listy 5 elementów ze scannera
@@ -53,7 +53,7 @@ Sprawdź działanie aplikacji.Stwórz oddzielnego maina, a w nim kolejną listę
 
      */
 
-    public Exercise_1(ArrayList integerList2) {
+    public Exercises_1(ArrayList integerList2) {
         this.integerList2 = integerList2;
     }
 
@@ -107,6 +107,49 @@ Sprawdź działanie aplikacji.Stwórz oddzielnego maina, a w nim kolejną listę
                 " (index: " + integerList3.indexOf(highest) + ")");
         System.out.printf("Lista nieposortowana: " + integerList3);
 
+
+    }
+
+    /*
+Stwórz oddzielnego maina, a w nim kolejną listę String'ów. Wykonaj zadania:
+- dodaj do listy elementy 10030, 3004, 4000, 12355, 12222, 67888, 111200, 225355,
+2222, 1111, 3546, 138751, 235912 (jako stringi) (dodaj je posługując się metodą
+Arrays.asList())
+Przykład użycia Arrays.asList():
+ArrayList<Integer> liczby = new ArrayList<>(Arrays.asList(23, 32, 44, 55, 677, 11, 33));
+Podany przykład to tylko demonstracja metody Arrays.asList, zadanie należy wykonać
+na liście String’ów.
+- określ indeks elementu 138751 posługując się metodą indexOf
+- sprawdź czy istnieje na liście obiekt 67888 metodą contains (wynik wypisz na ekran)
+- sprawdź czy istnieje na liście obiekkt 67889 metodą contains (wynik wypisz na ekran)
+- usuń z listy obiekt 67888 oraz 67889 (metoda remove)
+- wykonaj ponownie powyższe sprawdzenia.- iteruj całą listę, wypisz elementy na ekran (a. w jednej linii, b. każdy element w
+oddzielnej linii).
+Sprawdź działanie aplikacji.
+     */
+
+    public void zadanie_3(){
+        ArrayList<String> liczby = new ArrayList<>(Arrays.asList("10030","3004", "4000", "12355",
+                "12222", "67888", "111200", "225355", "2222", "1111", "3546", "138751", "235912"));
+        System.out.println(liczby);
+        System.out.println("Index Stringa 138751: "+liczby.indexOf("138751"));
+        System.out.println("Czy na liście znajduje się String 67888? "+liczby.contains("67888"));
+        System.out.println("Czy na liście znajduje się String 67889? "+liczby.contains("67889"));
+        System.out.println("Usuwam z listy obiekt 67888 "+liczby.remove("67888"));
+        System.out.println("Lista po usunięciu Stringa: "+liczby);
+        System.out.println("Usuwam z listy obiekt 67888 "+liczby.remove("67889"));
+
+        System.out.println("Lista - obiekt pod obiektem: ");
+        for (int i = 0; i<liczby.size();i++){
+            System.out.println(liczby.get(i));
+
+        }
+
+        System.out.println("Lista - obiekt obok obiektu: ");
+        for (int i = 0; i<liczby.size();i++){
+            System.out.print(liczby.get(i)+" ");
+
+        }
 
     }
 }

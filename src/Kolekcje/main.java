@@ -13,8 +13,9 @@ public class main {
             integerList.add(generator.nextInt(50));
 
 
-        Exercise_1 zadanie = new Exercise_1(integerList);
-        zadanie.Zadanie_2();
+        Exercises_1 zadanie = new Exercises_1(integerList);
+//        zadanie.Zadanie_2();
+        zadanie.zadanie_3();
 
     }
 }
