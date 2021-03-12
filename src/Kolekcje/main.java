@@ -1,8 +1,5 @@
 package Kolekcje;
 
-import java.util.ArrayList;
-import java.util.Random;
-
 public class main {
     public static void main(String[] args) {
 
@@ -12,7 +9,7 @@ public class main {
 //        for (int i = 0; i < 10; i++)
 //            integerList.add(generator.nextInt(50));
 
-        Exercises_1 zadanie = new Exercises_1();
+        Exercises_1to4 zadanie = new Exercises_1to4();
         zadanie.zadanie_4();
 
 

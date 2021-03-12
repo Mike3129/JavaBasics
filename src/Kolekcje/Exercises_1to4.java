@@ -3,8 +3,8 @@ package Kolekcje;
 import java.sql.SQLOutput;
 import java.util.*;
 
-public class Exercises_1 {
-    public Exercises_1() {
+public class Exercises_1to4 {
+    public Exercises_1to4() {
 
     }
 
@@ -57,7 +57,7 @@ Sprawdź działanie aplikacji.Stwórz oddzielnego maina, a w nim kolejną listę
 
      */
 
-    public Exercises_1(ArrayList integerList2) {
+    public Exercises_1to4(ArrayList integerList2) {
         this.integerList2 = integerList2;
     }
 
