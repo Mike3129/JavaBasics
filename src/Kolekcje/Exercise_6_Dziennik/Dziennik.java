@@ -16,8 +16,7 @@ studentów po numerach indeksów, a następnie zwraca posortowaną listę.
 - posiadać metodę ‘dodajOcene(String, Double):void’
  */
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.*;
 
 public class Dziennik {
     ArrayList<Student> listOfStudents = new ArrayList<>();
@@ -78,6 +77,13 @@ public class Dziennik {
             }
         }
         System.out.println(listaZagrozonych);
+
+    }
+
+    public void posortujStudentowPoIndexie(){
+        listOfStudents.sort(Comparator.comparing(Student::getIndex));
+        System.out.println(listOfStudents);
+
 
     }
 }
