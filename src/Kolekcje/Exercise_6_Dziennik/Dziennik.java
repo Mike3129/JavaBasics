@@ -16,6 +16,8 @@ studentów po numerach indeksów, a następnie zwraca posortowaną listę.
 - posiadać metodę ‘dodajOcene(String, Double):void’
  */
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 import java.util.*;
 
 public class Dziennik {
@@ -87,8 +89,8 @@ public class Dziennik {
 
     //istotne jest aby dodać ocenę do listy nie do Arryas.aslist
     //Arrays.asList można podmienić ale nie można tam dodać elementów.
-    public void dodajOcene(String index,Double ocena) {
-        for (Student studencik: listOfStudents) {
+    public void dodajOcene(String index, Double ocena) {
+        for (Student studencik : listOfStudents) {
             if (studencik.getIndex().equals(index)) {
                 studencik.getOceny().add(ocena);
                 System.out.println(studencik);
@@ -113,11 +115,44 @@ Wszystkie polecenia zrealizowane jako VarArgs.
         System.out.println(listOfStudents);
     }
 
-    public void usuniecieKilkuStudentow(Student...students){
+    public void usuniecieKilkuStudentow(Student... students) {
         for (Student student : students) {
             listOfStudents.remove(student);
         }
         System.out.println(listOfStudents);
+    }
+
+    public void wyszukiwanieKilkuStudentow(String... indexs) {
+        for (String index : indexs) {
+            for (int i = 0; i < listOfStudents.size(); i++) {
+                if (listOfStudents.get(i).getIndex().equals(index))
+                    System.out.println(listOfStudents.get(i));
+            }
+        }
+    }
+
+    public void dodajOceny(String index, Double...oceny) {
+        for (Student studencik : listOfStudents) {
+            if (studencik.getIndex().equals(index)) {
+                for (Double ocena:oceny) {
+                    studencik.getOceny().add(ocena);
+                }
+                System.out.println(studencik);
+            }
+        }
+
+    }
+
+    public void usunOceny(String index, Double...oceny) {
+        for (Student studencik : listOfStudents) {
+            if (studencik.getIndex().equals(index)) {
+                for (Double ocena:oceny) {
+                    studencik.getOceny().remove(ocena);
+                }
+                System.out.println(studencik);
+            }
+        }
+
     }
 
 }
