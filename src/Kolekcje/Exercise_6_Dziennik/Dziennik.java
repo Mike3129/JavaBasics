@@ -80,12 +80,46 @@ public class Dziennik {
 
     }
 
-    public void posortujStudentowPoIndexie(){
+    public void posortujStudentowPoIndexie() {
         listOfStudents.sort(Comparator.comparing(Student::getIndex));
         System.out.println(listOfStudents);
+    }
 
+    //istotne jest aby dodać ocenę do listy nie do Arryas.aslist
+    //Arrays.asList można podmienić ale nie można tam dodać elementów.
+    public void dodajOcene(String index,Double ocena) {
+        for (Student studencik: listOfStudents) {
+            if (studencik.getIndex().equals(index)) {
+                studencik.getOceny().add(ocena);
+                System.out.println(studencik);
+            }
+        }
 
     }
+
+    /*
+    Polecenia VarArgs:
+- dodanie kilku studentów
+- usunięcie kilku studentów
+- wyszukiwanie studentów (i zwrócenie znalezionych w liście)
+- dodanie/usuwanie ocen studentom
+Wszystkie polecenia zrealizowane jako VarArgs.
+     */
+
+    public void dodanieKilkuStudentow(Student... studenty) {
+        for (Student student : studenty) {
+            listOfStudents.add(student);
+        }
+        System.out.println(listOfStudents);
+    }
+
+    public void usuniecieKilkuStudentow(Student...students){
+        for (Student student : students) {
+            listOfStudents.remove(student);
+        }
+        System.out.println(listOfStudents);
+    }
+
 }
 
 
