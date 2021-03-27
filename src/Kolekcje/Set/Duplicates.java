@@ -26,6 +26,27 @@ wykorzystaniem zbioru. (boolean zawieraDuplikaty(String text))
         return false;
     }
 
+/*
+Stwórz aplikację która przyjmuje od użytkownika ciąg znaków (dowolny). Podziel ciąg
+(split) na pojedyncze litery. Twoim zadaniem jest stworzenie aplikacji która wypisze tylko
+unikalne litery frazy wpisanej przez użytkownika. Pomyśl o wykorzystaniu cechy zbioru -
+pamiętaj, że zbiór sam usuwa duplikaty
+ */
+
+    void unikatoweLitery(String text) {
+        Set tempSet = new HashSet();
+
+        for (int i = 0; i < text.length(); i++) {
+            tempSet.add(text.charAt(i));
+        }
+        System.out.println(text.replaceAll("[^a-z^A-Z]","").toCharArray());
+        System.out.println(text.split("\\a"));
+
+        System.out.println(tempSet);
+
+
+
+    }
 
 
 }

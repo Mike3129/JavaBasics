@@ -1,6 +1,6 @@
 package Kolekcje;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         //stowrzenie listy i wstrzyknięcie jej do metody

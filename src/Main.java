@@ -1,10 +1,6 @@
-import InstanceOfRzutowanieWdol.Pracownik;
-import InstanceOfRzutowanieWdol.Student;
-import Interfejsy.Interfejsik;
+import Kolekcje.Exceptions_1.Exceptions_1;
 
-import java.util.Arrays;
-
-public class main {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -87,15 +83,18 @@ public class main {
 
         //Sortowanie obiektów comparator
 
-        Pracownik[] pracownik = new Pracownik[3];
-        pracownik[0] = new Pracownik("Michał", "Sołtysiak",15000);
-        pracownik[1] = new Pracownik("Kazimierz", "Jajko",2000);
-        pracownik[2] = new Pracownik("Wiesław", "Zasada",4500);
+//        Pracownik[] pracownik = new Pracownik[3];
+//        pracownik[0] = new Pracownik("Michał", "Sołtysiak",15000);
+//        pracownik[1] = new Pracownik("Kazimierz", "Jajko",2000);
+//        pracownik[2] = new Pracownik("Wiesław", "Zasada",4500);
+//
+//        Arrays.sort(pracownik);
+//        System.out.println(pracownik[0].getWynagrodzenie());
+//        System.out.println(pracownik[1].getWynagrodzenie());
+//        System.out.println(pracownik[0].compareTo(pracownik[1]))
 
-        Arrays.sort(pracownik);
-        System.out.println(pracownik[0].getWynagrodzenie());
-        System.out.println(pracownik[1].getWynagrodzenie());
-        System.out.println(pracownik[0].compareTo(pracownik[1]));
+        Exceptions_1 wyjatek = new Exceptions_1();
+        wyjatek.task_8();
 
 
 
