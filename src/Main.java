@@ -1,3 +1,4 @@
+import Data_czas.DC_Exercises;
 import Kolekcje.Exceptions_1.Exceptions_1;
 
 public class Main {
@@ -93,8 +94,17 @@ public class Main {
 //        System.out.println(pracownik[1].getWynagrodzenie());
 //        System.out.println(pracownik[0].compareTo(pracownik[1]))
 
-        Exceptions_1 wyjatek = new Exceptions_1();
-        wyjatek.task_8();
+//        Exceptions_1 wyjatek = new Exceptions_1();
+//        wyjatek.task_8();
+
+        DC_Exercises data = new DC_Exercises();
+        data.aktualnaDataGodzina();
+        data.dateDifference();
+        data.timeDifference();
+        data.timeInTokyo();
+        data.timeInBydgoszcz();
+
+
 
 
 
